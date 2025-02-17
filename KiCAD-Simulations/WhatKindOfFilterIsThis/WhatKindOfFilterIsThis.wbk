@@ -1,0 +1,29 @@
+version 2
+3
+1
+.ac dec 50 10 24k{return}{return}{return}{return}.kicad adjustpaths{return}.save all{return}.probe alli
+2
+9
+V(BandStop)
+ 
+9
+V(Signal)
+ 
+1
+.ac dec 50 10 24k{return}{return}{return}{return}.kicad adjustpaths{return}.save all{return}.probe alli
+2
+9
+V(Just_Presence)
+ 
+9
+V(Signal)
+ 
+1
+.ac dec 50 10 24k{return}{return}{return}{return}.kicad adjustpaths{return}.save all{return}.probe alli
+2
+9
+V(BandStop+Presence)
+ 
+9
+V(Signal)
+ 
