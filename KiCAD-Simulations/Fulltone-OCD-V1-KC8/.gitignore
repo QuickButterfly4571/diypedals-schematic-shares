@@ -1,0 +1,14 @@
+*.data
+*.png
+*.svg
+*.zip
+*auto-save*
+*auto_save*
+*autosave*
+\#auto_saved_files#
+phase-data*
+plot-data-*.*
+plot-data.*
+tmp.plt
+fp-info-cache
+*backup*
