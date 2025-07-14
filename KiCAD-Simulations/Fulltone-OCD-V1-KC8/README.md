@@ -1,8 +1,8 @@
 # KiCAD 8 Fulltone OCD V1 Simulation
 
-![Fulltone-OCD-V1-Output](./Fulltone-OCD-V1-Out.png)
+![Fulltone-OCD-V1-Out.png](./Fulltone-OCD-V1-Out.png)
 
-[Fulltone OCD V1 Stages](./Fulltone-OCD-V1-Stages.png)
+![Fulltone-OCD-V1-Stages.png](./Fulltone-OCD-V1-Stages.png)
 
 
 ## Contents
