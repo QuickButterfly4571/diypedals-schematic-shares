@@ -1,0 +1,187 @@
+*
+
+.subckt BigMuff-Rams-Head
+
+
+.include "./1N914.LIB"
+.model __Q8 NPN
+.model __Q5 NPN
+.model __RV5 potentiometer( r=100k position=1 )
+.model __Q7 NPN
+.model __Q6 NPN
+.model __RV6 potentiometer( r=100k position=1 )
+.model __RV4 potentiometer( r=100k position=0.5 )
+.model __RV2 potentiometer( r=100k position=0.5 )
+.model __Q4 NPN
+.model __Q2 NPN
+.model __RV1 potentiometer( r=100k position=1 )
+.model __Q1 NPN
+.model __Q3 NPN
+.model __RV3 potentiometer( r=100k position=1 )
+.model __RV7 potentiometer( r=100k position=0.5 )
+.model __Q10 NPN
+.model __Q11 NPN
+.model __Q12 NPN
+.model __Q9 NPN
+.model __RV8 potentiometer( r=100k position=1 )
+.model __RV9 potentiometer( r=100k position=1 )
+C30 Net-_D7-K_ Net-_Q8-B_ 330p
+R49 Net-_C32-Pad1_ Input 47k
+C32 Net-_C32-Pad1_ Net-_Q9-B_ 470n
+D8 Net-_D7-A_ Net-_D7-K_ 1N914
+D7 Net-_D7-K_ Net-_D7-A_ 1N914
+R45 Net-_Q8-B_ GND 100k
+R48 Net-_Q8-E_ GND 150
+Q8 Net-_D7-K_ Net-_Q8-B_ Net-_Q8-E_ __Q8
+R24 Net-_Q5-B_ GND 130k
+C14 Net-_C14-Pad1_ Net-_Q5-B_ 470n
+R30 Net-_C24-Pad1_ GND 130k
+Q5 Net-_Q5-C_ Net-_Q5-B_ Net-_Q5-E_ __Q5
+R27 Net-_Q5-C_ VCC 10k
+R25 Net-_Q5-B_ Net-_Q5-C_ 510k
+C15 Net-_Q5-C_ Net-_Q5-B_ 680p
+C18 Net-_Q5-C_ Net-_C18-Pad2_ 100n
+ARV5 Net-_C24-Pad1_ Net-_C24-Pad1_ Net-_C18-Pad2_ __RV5
+R28 Net-_Q5-E_ GND 2.2k
+C16 Net-_C16-Pad1_ Net-_D7-K_ 22n
+C31 v2.1.5-HF-Comp4 GND 2.2n
+R46 Net-_Q8-B_ Net-_D7-K_ 510k
+C29 Net-_D7-A_ Net-_Q8-B_ 57n
+R47 Net-_D7-K_ VCC 27k
+D5 Net-_D5-K_ Net-_D5-A_ 1N914
+R43 Net-_C28-Pad2_ Net-_Q8-B_ 6.8k
+C28 Net-_D5-K_ Net-_C28-Pad2_ 470n
+Q7 Net-_D5-K_ Net-_Q7-B_ Net-_Q7-E_ __Q7
+C21 Net-_C19-Pad1_ Net-_C16-Pad1_ 30p
+C22 Net-_C19-Pad1_ Net-_Q6-B_ 150n
+R32 GND Net-_Q6-B_ 130k
+R31 Net-_Q6-B_ VCC 470k
+R35 Net-_Q6-C_ VCC 10k
+C25 Net-_Q6-B_ Net-_Q6-C_ 100p
+R36 GND Net-_Q6-E_ 2.2k
+Q6 Net-_Q6-C_ Net-_Q6-B_ Net-_Q6-E_ __Q6
+R41 Net-_R42-Pad2_ GND 1-3k
+C27 Net-_Q6-C_ Net-_C27-Pad2_ 1u
+ARV6 Net-_R42-Pad2_ Net-_R42-Pad1_ Net-_C27-Pad2_ __RV6
+R42 Net-_R42-Pad1_ Net-_R42-Pad2_ 20k
+R44 v2.1.5-HF-Comp4 Net-_R42-Pad1_ 10k
+C19 Net-_C19-Pad1_ Net-_C17-Pad2_ 100p
+C20 Net-_C19-Pad1_ Net-_C17-Pad2_ 330p
+R26 Net-_D7-K_ Net-_C17-Pad2_ 20k
+ARV4 Net-_C17-Pad2_ Net-_C19-Pad1_ Net-_C16-Pad1_ __RV4
+R29 GND Net-_C16-Pad1_ 24k
+C17 GND Net-_C17-Pad2_ 1n
+D6 Net-_D6-K_ Net-_D5-K_ 1N914
+C26 Net-_D5-K_ Net-_Q7-B_ 220p
+R38 Net-_Q7-B_ Net-_D5-K_ 470k
+R40 Net-_Q7-E_ GND 180
+C24 Net-_C24-Pad1_ Net-_C24-Pad2_ 150n
+R37 Net-_Q7-B_ GND 100k
+R34 Net-_C24-Pad2_ Net-_Q7-B_ 2.2k
+R33 Net-_D5-A_ Net-_D6-K_ 200
+C23 Net-_D5-A_ Net-_Q7-B_ 44n
+R17 RamsHead_Clip2 Net-_C11-Pad2_ 33k
+R18 GND Net-_C10-Pad1_ 33k
+R20 GND Net-_Q4-B_ 100k
+R22 GND Net-_Q4-E_ 2.7k
+C11 GND Net-_C11-Pad2_ 12n
+ARV2 Net-_C11-Pad2_ Net-_C12-Pad1_ Net-_C10-Pad1_ __RV2
+C10 Net-_C10-Pad1_ RamsHead_Clip2 4n
+C13 Net-_Q4-C_ Net-_C13-Pad2_ 470n
+R19 Net-_Q4-B_ VCC 470k
+C12 Net-_C12-Pad1_ Net-_Q4-B_ 470n
+R21 Net-_Q4-C_ VCC 12k
+Q4 Net-_Q4-C_ Net-_Q4-B_ Net-_Q4-E_ __Q4
+R23 Net-_C14-Pad1_ Input 47k
+R39 Net-_D5-K_ VCC 24k
+Q2 RamsHead_Clip1 Net-_Q2-B_ Net-_Q2-E_ __Q2
+D2 Net-_D1-A_ RamsHead_Clip1 1N914
+R12 Net-_C7-Pad2_ Net-_Q3-B_ 7.5k
+C7 RamsHead_Clip1 Net-_C7-Pad2_ 47n
+R11 Net-_Q2-E_ GND 100
+R9 Net-_Q2-B_ GND 100k
+C3 RamsHead_Boost Net-_C3-Pad2_ 470n
+ARV1 Net-_R6-Pad1_ Net-_C4-Pad1_ Net-_C3-Pad2_ __RV1
+R7 Net-_C4-Pad2_ Net-_Q2-B_ 7.5k
+C4 Net-_C4-Pad1_ Net-_C4-Pad2_ 470n
+R6 Net-_R6-Pad1_ GND 1.2k
+Q1 RamsHead_Boost Net-_Q1-B_ Net-_Q1-E_ __Q1
+R2 Net-_Q1-B_ GND 100k
+R5 Net-_Q1-E_ GND 100
+C1 Net-_C1-Pad1_ Net-_Q1-B_ 470n
+R3 Net-_Q1-B_ RamsHead_Boost 470k
+D4 Net-_D3-A_ RamsHead_Clip2 1N914
+C8 Net-_D3-A_ Net-_Q3-B_ 47n
+R15 RamsHead_Clip2 VCC 12k
+D3 RamsHead_Clip2 Net-_D3-A_ 1N914
+R14 Net-_Q3-B_ GND 100k
+R16 Net-_Q3-E_ GND 100
+Q3 RamsHead_Clip2 Net-_Q3-B_ Net-_Q3-E_ __Q3
+C9 RamsHead_Clip2 Net-_Q3-B_ 470p
+R13 Net-_Q3-B_ RamsHead_Clip2 470k
+R10 RamsHead_Clip1 VCC 12k
+C6 RamsHead_Clip1 Net-_Q2-B_ 470p
+R8 Net-_Q2-B_ RamsHead_Clip1 470k
+C5 Net-_D1-A_ Net-_Q2-B_ 470n
+D1 RamsHead_Clip1 Net-_D1-A_ 1N914
+ARV3 GND Rams_Head_Out Net-_C13-Pad2_ __RV3
+R1 Net-_C1-Pad1_ Input 33k
+C2 RamsHead_Boost Net-_Q1-B_ 470p
+R4 RamsHead_Boost VCC 12k
+V1 VCC GND DC 9 
+V2 Input GND DC 0 SIN( 0 100m 146 0 0 0 ) AC 1  
+D10 Net-_D10-K_ Net-_D10-A_ 1N914
+R63 Net-_Q11-B_ GND 100k
+D9 Net-_D10-A_ Net-_D9-A_ 1N914
+R64 Net-_Q11-B_ Net-_D10-A_ 470k
+C44 Net-_D10-A_ Net-_Q11-B_ 220p
+C42 Net-_C42-Pad1_ Net-_C42-Pad2_ 150n
+R60 Net-_C42-Pad2_ Net-_Q11-B_ 2.2k
+R59 Net-_D9-A_ Net-_D10-K_ 200
+C41 Net-_D9-A_ Net-_Q11-B_ 44n
+R65 Net-_D10-A_ VCC 24k
+ARV7 Net-_C35-Pad2_ Net-_C37-Pad1_ Net-_C34-Pad1_ __RV7
+Q10 Net-_Q10-C_ Net-_Q10-B_ Net-_Q10-E_ __Q10
+C40 Net-_C37-Pad1_ Net-_Q10-B_ 150n
+C43 Net-_Q10-B_ Net-_Q10-C_ 470p
+R66 Net-_Q11-E_ GND 180
+Q11 Net-_D10-A_ Net-_Q11-B_ Net-_Q11-E_ __Q11
+C46 Net-_D10-A_ Net-_C46-Pad2_ 470n
+C45 Net-_Q10-C_ Net-_C45-Pad2_ 1u
+R61 Net-_Q10-C_ VCC 10k
+R52 Net-_D11-K_ Net-_C35-Pad2_ 20k
+C35 GND Net-_C35-Pad2_ 1n
+C38 Net-_C37-Pad1_ Net-_C35-Pad2_ 330p
+C37 Net-_C37-Pad1_ Net-_C35-Pad2_ 100p
+R58 GND Net-_Q10-B_ 130k
+C47 Net-_D11-A_ Net-_Q12-B_ 57n
+R72 Net-_Q12-B_ Net-_D11-K_ 510k
+C48 Net-_D11-K_ Net-_Q12-B_ 330p
+R74 Net-_Q12-E_ GND 150
+Q12 Net-_D11-K_ Net-_Q12-B_ Net-_Q12-E_ __Q12
+D11 Net-_D11-K_ Net-_D11-A_ 1N914
+D12 Net-_D11-A_ Net-_D11-K_ 1N914
+R69 Net-_C46-Pad2_ Net-_Q12-B_ 6.8k
+R71 Net-_Q12-B_ GND 100k
+R73 Net-_D11-K_ VCC 27k
+R53 Net-_Q9-C_ VCC 10k
+Q9 Net-_Q9-C_ Net-_Q9-B_ Net-_Q9-E_ __Q9
+C33 Net-_Q9-C_ Net-_Q9-B_ 680p
+R51 Net-_Q9-B_ Net-_Q9-C_ 510k
+ARV8 Net-_C42-Pad1_ Net-_C42-Pad1_ Net-_C36-Pad2_ __RV8
+C36 Net-_Q9-C_ Net-_C36-Pad2_ 100n
+R56 Net-_C42-Pad1_ GND 130k
+R57 Net-_Q10-B_ VCC 470k
+C34 Net-_C34-Pad1_ Net-_D11-K_ 22n
+R55 GND Net-_C34-Pad1_ 24k
+C39 Net-_C37-Pad1_ Net-_C34-Pad1_ 30p
+R54 Net-_Q9-E_ GND 2.2k
+R50 Net-_Q9-B_ GND 130k
+ARV9 Net-_R68-Pad2_ Net-_R68-Pad1_ Net-_C45-Pad2_ __RV9
+R62 GND Net-_Q10-E_ 2.2k
+R67 Net-_R68-Pad2_ GND 1-3k
+C49 v2.1.5-HF-Comp5 GND 2.2n
+R70 v2.1.5-HF-Comp5 Net-_R68-Pad1_ 10k
+R68 Net-_R68-Pad1_ Net-_R68-Pad2_ 20k
+
+.ends
