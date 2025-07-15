@@ -1,0 +1,25 @@
+.include "./BigMuff-Rams-Head.cir"
+.tran 250u 100m
+
+xbmf BigMuff-Rams-Head
+
+.control
+
+set spicebehavior=all
+run
+display
+set gnuplot_terminal = png/quit
+
+gnuplot Rams_Head_Out
++ xbmf.rams_head_out
+
+gnuplot ramshead_boost
++ xbmf.ramshead_boost
+
+gnuplot ramshead_clip1
++ xbmf.ramshead_clip1
+
+gnuplot ramshead_clip2
++ xbmf.ramshead_clip2
+
+.endc
