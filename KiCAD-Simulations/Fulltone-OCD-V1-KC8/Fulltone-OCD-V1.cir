@@ -1,0 +1,45 @@
+*
+
+.subckt Fulltone-OCD-V1
+
+
+.include "./2N7000.REV0.LIB"
+.include "./TL072.301"
+.model __RV1 potentiometer( r=1Meg position=1 )
+.model __S1 SW
++           vt=1
++           ron=1
+.model __RV2 potentiometer( r=10k position=0.5 )
+.model __RV3 potentiometer( r=100k position=1 )
+ARV1 Net-_R4-Pad2_ V1_Boost V1_Boost __RV1
+R4 Net-_U1A--_ Net-_R4-Pad2_ 18k
+XQ1 GND V1_Clip V1_Clip 2n7000
+XU2 Net-_U2A-+_ Net-_U2A--_ VCC VEE V1_Clip_Recovery TL072
+C2 GND Net-_C2-Pad2_ 68n
+R3 Net-_C2-Pad2_ Net-_U1A--_ 2.2k
+XU1 Net-_U1A-+_ Net-_U1A--_ VCC VEE V1_Boost TL072
+R8 Net-_U2A--_ Net-_C5-Pad2_ 39k
+C5 GND Net-_C5-Pad2_ 100n
+XQ2 V1_Clip GND GND 2n7000
+C6 V1_Clip_Recovery Net-_U2A--_ 220p
+R7 Net-_U2A-+_ GND 220k
+R9 V1_Clip_Recovery Net-_U2A--_ 150k
+S1 Net-_S1-N+_ Net-_S1-N-_ Bright_CTRL GND __S1 off
+R10 Net-_S1-N-_ Net-_S1-N+_ 33k
+ARV2 GND Net-_C8-Pad2_ Net-_C8-Pad2_ __RV2
+C8 Net-_S1-N+_ Net-_C8-Pad2_ 47n
+ARV3 GND V1_Out Net-_S1-N+_ __RV3
+C4 GND V1_Clip 10n
+R1 Net-_C1-Pad1_ Signal_Simple 10k
+C1 Net-_C1-Pad1_ Net-_U1A-+_ 22n
+R5 V1_Clip V1_Boost 10k
+V3 Signal_Simple GND DC 0 SIN( 0 100m 155.56 0 0 0 ) AC 1  
+C3 Net-_U1A--_ V1_Boost 220p
+R2 Net-_U1A-+_ GND 470k
+R6 Net-_U2A-+_ V1_Clip 10k
+C7 Net-_S1-N-_ V1_Clip_Recovery 10u
+V4 Bright_CTRL GND PULSE( 0 2 50m 2n 2n 50m 100m ) 
+V2 GND VEE DC 4.5 
+V1 VCC GND DC 4.5 
+
+.ends

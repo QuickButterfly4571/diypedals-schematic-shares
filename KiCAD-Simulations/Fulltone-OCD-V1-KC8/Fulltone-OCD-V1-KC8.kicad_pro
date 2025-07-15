@@ -385,7 +385,7 @@
     "meta": {
       "version": 1
     },
-    "net_format_name": "KiCad",
+    "net_format_name": "Spice Model",
     "ngspice": {
       "fix_include_paths": false,
       "meta": {
