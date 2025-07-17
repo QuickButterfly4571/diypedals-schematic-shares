@@ -13,6 +13,7 @@ Repo to collect schematics shared by u/Quick_Butterfly_4571 and u/povins in r/di
  - [BygoneTrapezoid](./schematics/BygoneTrapezoid.pdf): retro console fuzz with a regrettably bad name [Demo](https://www.reddit.com/r/diypedals/comments/1hxj0g6/so_you_want_to_make_consoley_synth_fuzzes_eh/)
  - Simple, amp-ish, drives: [Prudence](./schematics/Prudence.pdf), [Harry](./schematics/Harry.pdf)
  - [Plain Square Zero](./schematics/PlainSquareZero.pdf): simple square wave comparator fuzz (another bad name; it's a trend)
+ - [Simple Comparator Fuzz](./schematics/SimpleCompFuzz.pdf): One NPN and a LM311!
  - [OSM (Olangrall's Sex Machine)](./schematics/OSM.pdf): PLL-Octave-Synth-Fuzz-Wah? [Demo](https://www.reddit.com/r/diypedals/comments/1i2f116/everything_is_a_clone_of_something/).
  - [OSM II](./schematics/OSM2.pdf): Same thing + an LM311 to automatically adjust control filter (this is nonsense in lieu of doing the math. The "I did the math" version works better, but this was fun / peculiar, so...here it is).
  - [PadillaFuzz](./schematics/PadillaFuzz.pdf): A transistor fuzz that's quieter when engaged than not, but roars when you play.
