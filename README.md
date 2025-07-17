@@ -5,7 +5,7 @@
 </center>
 
 # diypedals-schematic-shares
-Repo to collect schematics shared by u/Quick_Butterfly_4571 and u/povins in r/diypedals
+Repo to collect schematics shared by u/Quick_Butterfly_4571 and u/povins in [r/diypedals](https://www.reddit.com/r/diypedals/)
 
 ## Schematics
 
