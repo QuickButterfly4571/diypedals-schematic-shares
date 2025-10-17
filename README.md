@@ -22,6 +22,7 @@ Repo to collect schematics shared by u/Quick_Butterfly_4571 and u/povins in [r/d
  - [SyndicatedOverdrive](./schematics/SyndicatedOverdrive.pdf): A better version of the Fulltone OCD
  - [SyndicatedOverdrive-Mini](./schematics/SyndicatedOverdrive-Mini.pdf): The simpler version of the above!
  - ["Yup!" Mini Grit](./schematics/Yup-Mini-Grit.pdf): simple two transistor boost/dirt
+ - [Grovie](./schematics/Grovie.pdf): Nice little drive pedal. Three NPN's and some passives. I like it.
 
 
 ## Changelog
