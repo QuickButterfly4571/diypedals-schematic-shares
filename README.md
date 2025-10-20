@@ -9,20 +9,36 @@ Repo to collect schematics shared by u/Quick_Butterfly_4571 and u/povins in [r/d
 
 ## Schematics
 
- - [7Seg-Clipper](./schematics/7Seg-Clipper.pdf): Uses a seven-segment display for clipping diodes
+### Synth / Retro Game Sounds
+
  - [BygoneTrapezoid](./schematics/BygoneTrapezoid.pdf): retro console fuzz with a regrettably bad name [Demo](https://www.reddit.com/r/diypedals/comments/1hxj0g6/so_you_want_to_make_consoley_synth_fuzzes_eh/)
- - Simple, amp-ish, drives: [Prudence](./schematics/Prudence.pdf), [Harry](./schematics/Harry.pdf)
  - [Plain Square Zero](./schematics/PlainSquareZero.pdf): simple square wave comparator fuzz (another bad name; it's a trend)
- - [Simple Comparator Fuzz](./schematics/SimpleCompFuzz.pdf): One NPN and a LM311!
  - [OSM (Olangrall's Sex Machine)](./schematics/OSM.pdf): PLL-Octave-Synth-Fuzz-Wah? [Demo](https://www.reddit.com/r/diypedals/comments/1i2f116/everything_is_a_clone_of_something/).
  - [OSM II](./schematics/OSM2.pdf): Same thing + an LM311 to automatically adjust control filter (this is nonsense in lieu of doing the math. The "I did the math" version works better, but this was fun / peculiar, so...here it is).
+
+### Fuzz
+ - [Simple Comparator Fuzz](./schematics/SimpleCompFuzz.pdf): One NPN and a LM311!
  - [PadillaFuzz](./schematics/PadillaFuzz.pdf): A transistor fuzz that's quieter when engaged than not, but roars when you play.
  - [Padilla-Fuzz-Fleepd-Edition](./schematics/Padilla-Fuzz-Fleepd-Edition.pdf): Tighter version of the above (thanks u/fleepd). Maybe lower noise? Makes more sense, in either case.
  - [PlainSquareZero](./schematics/PlainSquareZero.pdf): A simple LM311 comparator fuzz (that also has a regrettable name).
+
+
+### Drive
  - [SyndicatedOverdrive](./schematics/SyndicatedOverdrive.pdf): A better version of the Fulltone OCD
  - [SyndicatedOverdrive-Mini](./schematics/SyndicatedOverdrive-Mini.pdf): The simpler version of the above!
  - ["Yup!" Mini Grit](./schematics/Yup-Mini-Grit.pdf): simple two transistor boost/dirt
  - [Grovie](./schematics/Grovie.pdf): Nice little drive pedal. Three NPN's and some passives. I like it.
+ - Simple, amp-ish, drives: [Prudence](./schematics/Prudence.pdf), [Harry](./schematics/Harry.pdf)
+
+
+### Oddballs / Experiments
+
+ - [7Seg-Clipper](./schematics/7Seg-Clipper.pdf): Uses a seven-segment display for clipping diodes
+
+
+## Other
+
+- Misc KiCAD simulations in [KiCAD-Simulations](./KiCAD-Simulations)
 
 
 ## Changelog
