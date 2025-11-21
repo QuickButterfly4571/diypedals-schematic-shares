@@ -1,7 +1,7 @@
 .include "./BigMuff-Rams-Head/BigMuff-Rams-Head.cir"
 .include "./Fulltone-OCD-V1-KC8/Fulltone-OCD-V1.cir"
 .include "./Grovie-Sim/Grovie-Sim.cir"
-.tran 250u 100m
+.tran 250u 35m
 
 xbmf BigMuff-Rams-Head
 xocd Fulltone-OCD-V1

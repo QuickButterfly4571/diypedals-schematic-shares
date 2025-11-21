@@ -30,5 +30,5 @@ ARV1 GND Output1 Net-_C4-Pad2_ __RV1
 R17 Output1 GND 20k
 V1 VCC GND DC 9 
 R10 Input1 Net-_R1-Pad1_ 5.6k
-V2 Input1 GND DC 0 SIN( 0 150m 220 0 0 0 ) AC 1
+V2 Input1 GND DC 0 SIN( 0 100m 155.56 0 0 0 ) AC 1
 .ends
