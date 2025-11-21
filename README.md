@@ -5,7 +5,9 @@
 </center>
 
 # diypedals-schematic-shares
-Repo to collect schematics shared by u/Quick_Butterfly_4571 and u/povins in [r/diypedals](https://www.reddit.com/r/diypedals/)
+Repo to collect schematics shared by u/Quick_Butterfly_4571 and u/povins in [r/diypedals](https://www.reddit.com/r/diypedals/).
+
+(Added a sponsor button. **No pressure, folks.** u/povins (@andrew-canaday) already had a sponsorship account set up. We both get the coffee).
 
 ## Schematics
 
