@@ -1,6 +1,21 @@
 SPICE Sims
 ==========
 
+Assuming you have `ngspice` and `make` installed, you should be able to simply
+do:
+
+```bash
+# List targets:
+make help
+
+# Run all sims:
+make
+```
+
+And automatically run most of the sims.
+
+## Usage
+
 Most of these should be subcircuits so you can instantiate and
 compare, like so:
 
@@ -28,4 +43,4 @@ gnuplot comparison
 
 And then: `ngspice -b ./contrast.cir` to compare the two:
 
-![Big Muff vs OCD Comparison](./comparison.png)
+![Big Muff vs OCD Comparison](./big-muff-vs-ocd.png)

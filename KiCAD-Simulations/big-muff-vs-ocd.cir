@@ -1,11 +1,9 @@
 .include "./BigMuff-Rams-Head/BigMuff-Rams-Head.cir"
 .include "./Fulltone-OCD-V1-KC8/Fulltone-OCD-V1.cir"
-.include "./Grovie-Sim/Grovie-Sim.cir"
 .tran 250u 35m
 
 xbmf BigMuff-Rams-Head
 xocd Fulltone-OCD-V1
-xgrovie Grovie
 
 .control
 
@@ -15,9 +13,8 @@ display
 set gnuplot_terminal = png/quit
 set xbrushwidth = 2
 
-gnuplot comparison
+gnuplot big-muff-vs-ocd
 + xbmf.rams_head_out
 + xocd.v1_out
-+ xgrovie.Output1
 
 .endc
